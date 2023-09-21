@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenDriver.API", "ZenDriver.API\ZenDriver.API.csproj", "{6F0547F9-BF2F-4124-A395-B9781F1E9E2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenDriver.API.Tests", "ZenDriver.API.Tests\ZenDriver.API.Tests.csproj", "{D0603C33-5CF8-488D-8682-DF3D7D6CEFAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F0547F9-BF2F-4124-A395-B9781F1E9E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F0547F9-BF2F-4124-A395-B9781F1E9E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F0547F9-BF2F-4124-A395-B9781F1E9E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F0547F9-BF2F-4124-A395-B9781F1E9E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0603C33-5CF8-488D-8682-DF3D7D6CEFAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0603C33-5CF8-488D-8682-DF3D7D6CEFAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0603C33-5CF8-488D-8682-DF3D7D6CEFAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0603C33-5CF8-488D-8682-DF3D7D6CEFAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75F98168-B0FF-411F-A1A4-2ACAC6D5D967}
+	EndGlobalSection
+EndGlobal
