@@ -1,0 +1,35 @@
+name: CI/CD para C#
+
+on:
+  push:
+    branches:
+      - main  # Ejecutar CI/CD cuando se realice un push a la rama principal
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout del código fuente
+      uses: actions/checkout@v2
+
+    - name: Configurar el entorno de C#
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0  # Puedes ajustar la versión de .NET según tu proyecto
+
+    - name: Restaurar dependencias
+      run: dotnet restore
+
+    - name: Compilar la aplicación
+      run: dotnet build --configuration Release
+
+    - name: Ejecutar pruebas
+      run: dotnet test
+
+    - name: Verificar disponibilidad de la aplicación
+      run: curl --head --fail https://zendrivers.azurewebsites.net/swagger/index.html
+
+# Puedes agregar más pasos y personalizar el flujo de trabajo según tus necesidades
+
+
